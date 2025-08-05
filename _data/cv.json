@@ -1,10 +1,10 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Woohun Son",
+    "email": "son.268@osu.edu",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://SonWoohun.github.io",
+    "summary": "Currently studying at the Ohio State University. Research interests include industrial organization, applied econometrics, and decision theory. Focusing on limited attention in advertising and budget constraint problem in discrete choice.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -25,37 +25,47 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "SonWoohun",
+        "url": "https://github.com/SonWoohun"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "The Ohio State University",
+      "area": "Ph.D in Economics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2028 (expected)",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "The Ohio State University",
+      "area": "M.A. in Economics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Korea University",
+      "area": "M.A. in Economics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "2022",
+      "gpa": null,
+      "courses": []
+    }
+    ,
+    {
+      "institution": "Korea University",
+      "area": "B.A. in Korean history and Economics (double major)",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2019",
       "gpa": null,
       "courses": []
     }
@@ -64,36 +74,7 @@
   "languages": [],
   "interests": [],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
+  "publications": null,
   "presentations": [
     {
       "name": "Talk 1 on Relevant Topic in Your Field",
