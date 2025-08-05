@@ -44,7 +44,19 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+    {% endfor %}</ul>
+    
+  <!-- You can also add manual entries if needed:
+  * Spring 2023: Graduate Teaching Assistant
+    * The Ohio State University
+    * Course: ECON 2001.01 - Principles of Microeconomics
+    * Duties: Led weekly recitation sections, graded assignments and exams, held office hours
+
+  * Fall 2022: Graduate Teaching Assistant
+    * The Ohio State University
+    * Course: ECON 4001.01 - Intermediate Microeconomic Theory
+    * Duties: Assisted professor with course materials, graded problem sets
+  -->
 
 Languages
 ======

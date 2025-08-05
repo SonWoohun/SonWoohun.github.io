@@ -8,4 +8,4 @@ date: "Fall 2019, Spring 2020, Fall 2020"
 location: "Seoul, Korea"
 ---
 
-
+Done teaching assistant under Prof. Sangsoo Park, also my advisor in Masters.

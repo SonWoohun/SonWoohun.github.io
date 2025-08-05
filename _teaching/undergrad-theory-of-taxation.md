@@ -8,4 +8,4 @@ date: "Spring 2021"
 location: "Seoul, Korea"
 ---
 
-
+Done teaching assistant under Prof. Samho Lee
