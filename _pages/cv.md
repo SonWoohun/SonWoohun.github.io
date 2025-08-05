@@ -26,20 +26,6 @@ Work experience
   * NYU Abu Dhabi
   * Supervisor: Associate Professor Christopher Paik
 
-
-  
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
 Teaching
 ======
 * Spring 2021: Teaching Assistant
