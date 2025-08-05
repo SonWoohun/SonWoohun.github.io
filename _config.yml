@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Woohun Son / Professional Website in Economics"
+title                    : "Woohun Son / Economics"
 title_separator          : "-"
 name                     : &name "Woohun Son"
 description              : &description "I'm a Ph.D. candidate in Economics at the Ohio State University. My research interests include industrial organization, applied econometrics, and decision theory. I am currently focussing on limited attention in advertising and budget constraint problem in discrete choice."
