@@ -22,7 +22,7 @@ repository               : "SonWoohun/SonWoohun.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "SonWoohun-downsized.jpg"
   name             : "Woohun Son"
   pronouns         : # example: "she/her"  
   bio              : "I'm a Ph.D. candidate in Economics at the Ohio State University. My research interests include industrial organization, applied econometrics, and decision theory. I am currently focussing on limited attention in advertising and budget constraint problem in discrete choice."
