@@ -11,26 +11,22 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Economics, The Ohio State University, 2022-2028 (expected)
+* M.A. in Economics, The Ohio State University, 201
 * B.S. in GitHub, GitHub University, 2012
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
+* Summer 2025: Research Assistant
+  * The Ohio State University
+  * Supervisor: Associate Professor John Rehbeck
+
+* Oct-Dec 2021: Research Assistant
+  * NYU Abu Dhabi
   * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  * Supervisor: Associate Professor Christopher Paik
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
 Skills
 ======
