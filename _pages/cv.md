@@ -12,8 +12,9 @@ redirect_from:
 Education
 ======
 * Ph.D in Economics, The Ohio State University, 2022-2028 (expected)
-* M.A. in Economics, The Ohio State University, 201
-* B.S. in GitHub, GitHub University, 2012
+* M.A. in Economics, The Ohio State University, 2023
+* M.A. in Economics, Korea University, 2023
+* B.A. in Korean history and Economics (double major), Korea University, 2012
 
 Work experience
 ======
@@ -23,7 +24,6 @@ Work experience
 
 * Oct-Dec 2021: Research Assistant
   * NYU Abu Dhabi
-  * Duties includes: Updates and improvements to template
   * Supervisor: Associate Professor Christopher Paik
 
 
