@@ -70,8 +70,8 @@
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
+  "skills": null,
+  "languages": ["Korean", "English"],
   "interests": [],
   "references": [],
   "publications": null,
