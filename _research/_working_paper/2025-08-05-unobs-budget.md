@@ -1,8 +1,8 @@
 ---
 title: "Identification of Preferences with Unobserved Budget Using Vertical Differentiation within Brands"
 collection: working_paper
-permalink: /research/2025-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
+permalink: /research/2025-08-05-unobs-budget
+excerpt: 'This paper is about dealing with unobserved budget in discrete choice'
 date: 2025-08-05
 ---
 
