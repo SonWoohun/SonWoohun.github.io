@@ -2,6 +2,44 @@
    ELEGANT RESEARCH PAGE STYLING WITH SIDEBAR
    ========================================================================== */
 
+/* Global spacing overrides for research items */
+.research-item .archive__item,
+.research-item .archive__item *,
+.research-item .archive__item .page__date,
+.research-item .archive__item .archive__item-excerpt,
+.research-item .archive__item .archive__item-links,
+.research-item .archive__item .archive__item-tags,
+.research-item .archive__item p,
+.research-item .archive__item div {
+  margin-bottom: 0 !important;
+}
+
+.research-item .archive__item .archive__item-title {
+  margin-bottom: 0.2rem !important;
+}
+
+.research-item .archive__item .page__date {
+  margin-bottom: 0.25rem !important;
+}
+
+.research-item .archive__item .archive__item-excerpt {
+  margin-bottom: 0.25rem !important;
+}
+
+.research-item .archive__item .research-badge {
+  margin-bottom: 0.2rem !important;
+}
+
+.research-item .archive__item .archive__item-links {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0 !important;
+}
+
+.research-item .archive__item .archive__item-tags {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0 !important;
+}
+
 /* Research Page Layout */
 .research-page-layout {
   display: flex;
@@ -48,11 +86,11 @@
   
   .category-link, .tag-link {
     display: block;
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     color: var(--global-text-color-fade);
     text-decoration: none;
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 400;
     transition: all 0.2s ease;
     
@@ -108,7 +146,7 @@
   border: 1px solid var(--global-border-light);
   border-radius: 8px;
   padding: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.3rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -124,7 +162,7 @@
   }
   
   .archive__item {
-    padding: 0.5rem 1.5rem 0.4rem 2.5rem !important;
+    padding: 0.3rem 1.5rem 0.2rem 2.5rem !important;
     margin-bottom: 0 !important;
     
     &:last-child {
@@ -133,33 +171,34 @@
     
     * {
       margin-top: 0 !important;
+      margin-bottom: 0 !important;
     }
     
     .archive__item-title {
-      margin-bottom: 0.25rem !important;
+      margin-bottom: 0.2rem !important;
       line-height: 1.2 !important;
       font-size: 1.1rem !important;
     }
     
     .page__date {
-      margin-bottom: 0.3rem !important;
+      margin-bottom: 0.25rem !important;
       font-size: 0.85rem !important;
     }
     
     .archive__item-excerpt {
-      margin-bottom: 0.3rem !important;
+      margin-bottom: 0.25rem !important;
       line-height: 1.4 !important;
       font-size: 0.9rem !important;
     }
     
     .research-badge {
-      margin-bottom: 0.25rem !important;
+      margin-bottom: 0.2rem !important;
       font-size: 0.7rem !important;
       padding: 0.15rem 0.5rem !important;
     }
     
     p {
-      margin-bottom: 0.3rem !important;
+      margin-bottom: 0.25rem !important;
       font-size: 0.9rem !important;
       
       &:last-child {
@@ -169,12 +208,13 @@
     
     h2, h3, h4 {
       margin-top: 0 !important;
-      margin-bottom: 0.25rem !important;
+      margin-bottom: 0.2rem !important;
       font-size: 1.1rem !important;
     }
     
     .archive__item-links {
       margin-bottom: 0 !important;
+      margin-top: 0.2rem !important;
       
       &:last-child {
         margin-bottom: 0 !important;
@@ -183,6 +223,7 @@
     
     .archive__item-tags {
       margin-bottom: 0 !important;
+      margin-top: 0.2rem !important;
       
       &:last-child {
         margin-bottom: 0 !important;
