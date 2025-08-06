@@ -1,0 +1,32 @@
+<!-- Custom meta title for academic website -->
+{% if page.url == "/" %}
+  <!-- Homepage gets the full site title -->
+  <title>{{ site.title }}</title>
+  <meta property="og:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title }}">
+{% elsif page.title %}
+  <!-- Other pages get: Page Title | Site Title -->
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+{% else %}
+  <!-- Fallback to site title -->
+  <title>{{ site.title }}</title>
+  <meta property="og:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+
+<!-- Ensure description is set for homepage -->
+{% if page.url == "/" %}
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+{% elsif page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+{% else %}
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}

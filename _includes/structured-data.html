@@ -34,7 +34,7 @@ This helps Google understand your academic credentials and research
   "description": "{{ site.description }}",
   "image": "{{ site.url }}/images/{{ site.author.avatar }}",
   "sameAs": [
-    "{{ site.author.github }}",
+    {% if site.author.github %}"https://github.com/{{ site.author.github }}",{% endif %}
     "{{ site.url }}"
   ],
   "address": {
@@ -42,6 +42,25 @@ This helps Google understand your academic credentials and research
     "addressLocality": "Columbus",
     "addressRegion": "Ohio",
     "addressCountry": "US"
+  }
+}
+</script>
+
+<!-- Additional Schema for Academic Website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
   }
 }
 </script>

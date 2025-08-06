@@ -13,10 +13,12 @@ Allow: /teaching/
 Allow: /talks/
 Allow: /portfolio/
 
-# Disallow admin and development files
+# Disallow admin, development files, and old blog posts
 Disallow: /_*
 Disallow: /assets/js/
 Disallow: /assets/css/
 Disallow: /.git/
 Disallow: /node_modules/
 Disallow: /vendor/
+Disallow: /_old_posts/
+Disallow: /posts/
