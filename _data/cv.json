@@ -102,5 +102,5 @@
   "awards": [{
 
   }],
-  "languages": [{"Korean (Native)", "English (Fluent)"}]
+  "languages": [{"Korean": "Native"}, {"English": "Fluent"}]
 }
