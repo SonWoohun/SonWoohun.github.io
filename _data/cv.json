@@ -30,7 +30,7 @@
       }
     ]
   },
-  "work": [b
+  "work": [
     {
       "company": "The Ohio State University",
       "position": "Graduate Research Assistant",
@@ -55,7 +55,7 @@
       "institution": "The Ohio State University",
       "area": "Ph.D in Economics",
       "studyType": "",
-      "startDate": "Fall 2022",
+      "startDate": "Fall2022",
       "endDate": "2028 (expected)",
       "gpa": null,
       "courses": []
