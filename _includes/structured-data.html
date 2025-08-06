@@ -1,0 +1,47 @@
+{% comment %}
+JSON-LD structured data for academic profile
+This helps Google understand your academic credentials and research
+{% endcomment %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "email": "{{ site.author.email }}",
+  "jobTitle": "Ph.D. Candidate in Economics",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "The Ohio State University",
+    "url": "https://www.osu.edu"
+  },
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Korea University",
+      "url": "https://www.korea.edu"
+    }
+  ],
+  "knowsAbout": [
+    "Industrial Organization",
+    "Applied Econometrics", 
+    "Decision Theory",
+    "Limited Attention",
+    "Discrete Choice Models",
+    "Budget Constraints"
+  ],
+  "description": "{{ site.description }}",
+  "image": "{{ site.url }}/images/{{ site.author.avatar }}",
+  "sameAs": [
+    "{{ site.author.github }}",
+    "{{ site.url }}"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Columbus",
+    "addressRegion": "Ohio",
+    "addressCountry": "US"
+  }
+}
+</script>

@@ -132,8 +132,8 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : # Add your Google Search Console verification code here
+bing_site_verification   : # Add your Bing verification code here  
 alexa_site_verification  :
 yandex_site_verification :
 
@@ -145,8 +145,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "SonWoohun-downsized.jpg" # Social media default site image
+og_description           : "Ph.D. candidate in Economics at Ohio State University. Research in industrial organization, applied econometrics, and decision theory. Focus on limited attention in advertising and budget constraints in discrete choice." # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

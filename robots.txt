@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://SonWoohun.github.io/sitemap.xml
+
+# Allow access to all important pages
+Allow: /research/
+Allow: /publications/
+Allow: /cv/
+Allow: /cv-json/
+Allow: /teaching/
+Allow: /talks/
+Allow: /portfolio/
+
+# Disallow admin and development files
+Disallow: /_*
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /vendor/
