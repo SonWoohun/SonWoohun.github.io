@@ -2,6 +2,31 @@
    ELEGANT RESEARCH PAGE STYLING WITH SIDEBAR
    ========================================================================== */
 
+/* Profile sidebar styling for research page */
+.research-page-layout .author__content {
+  font-size: 0.85rem !important;
+  line-height: 1.4 !important;
+  
+  .author__name {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .author__bio {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .author__urls {
+    font-size: 0.75rem !important;
+    
+    .author__url {
+      margin-bottom: 0.25rem !important;
+    }
+  }
+}
+
 /* Global spacing overrides for research items */
 .research-item .archive__item,
 .research-item .archive__item *,
@@ -46,7 +71,7 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 /* Research Sidebar */
@@ -122,10 +147,14 @@
 }
 
 .research-category {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  
+  &:first-child {
+    margin-top: 0;
+  }
   
   &:last-child {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   h2 {
@@ -133,11 +162,17 @@
     font-size: 1.75rem;
     font-weight: 600;
     color: var(--global-text-color);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    padding-bottom: 0.3rem;
     border-bottom: 1px solid var(--global-border-light);
     letter-spacing: -0.02em;
     line-height: 1.3;
+  }
+  
+  hr {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
   }
 }
 
