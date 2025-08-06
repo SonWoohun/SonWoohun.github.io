@@ -8,20 +8,20 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Columbus",
       "countryCode": "US",
-      "region": ""
+      "region": "Ohio"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
+        "network": "",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": ""
       },
       {
-        "network": "ORCID",
+        "network": "",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": ""
       },
       {
         "network": "GitHub",
