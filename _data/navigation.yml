@@ -8,12 +8,9 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Working Papers"
-    url: /research/working_papers/
-
-  - title: "Work in Progress"
-    url: /research/work_in_progress/
-
+  - title: "Researches"
+    url: /research/
+    
   - title: "Talks"
     url: /talks/    
 
