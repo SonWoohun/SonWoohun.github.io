@@ -29,21 +29,18 @@ Work experience
 Teaching
 ======
 * Spring 2021: Teaching Assistant
-  * Korea University, Department of Economics
+  * Korea University, Department of Economics, Location: Seoul, Korea
   * Course: Undergraduate Theory of Taxation
-  * Location: Seoul, Korea
   * Done teaching assistant under Prof. Samho Lee
 
 * Spring 2020, Spring 2021: Teaching Fellow
-  * Korea University, Department of Economics
+  * Korea University, Department of Economics, Location: Seoul, Korea
   * Course: Undergraduate Principles of Economics 1
-  * Location: Seoul, Korea
   * Done teaching fellow under Prof. Jinyoung Kim
 
 * Fall 2019, Spring 2020, Fall 2020: Teaching Assistant
-  * Korea University, Department of Economics
+  * Korea University, Department of Economics, Location: Seoul, Korea
   * Course: Undergraduate Econometrics 1
-  * Location: Seoul, Korea
   * Done teaching assistant under Prof. Sangsoo Park, also my advisor in Masters
   
   <!-- You can also add manual entries if needed:
