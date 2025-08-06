@@ -71,7 +71,6 @@
     }
   ],
   "skills": null,
-  "languages": ["Korean (Native)", "English (Fluent)"],
   "interests": [],
   "references": [],
   "publications": null,
@@ -99,5 +98,9 @@
       "description": "Fall 2019, Spring 2020, Fall 2020"
     }
   ],
-  "portfolio": null
+  "portfolio": null,
+  "awards": [{
+
+  }],
+  "languages": [{"Korean (Native)", "English (Fluent)"}]
 }
