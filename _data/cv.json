@@ -30,7 +30,26 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "The Ohio State University",
+      "position": "Graduate Research Assistant",
+      "startDate": "2025-",
+      "endDate": "",
+      "summary": "Conducting research in rationalizability of stochastic choice data generated from different consideration sets with global preference function.",
+      "highlights": [
+        "Trying to come up with preference function form that is robust to different consideration sets."
+      ]
+    },
+    {
+      "company": "NYU Abu Dhabi",
+      "position": "Graduate Research Assistant",
+      "startDate": "2021-10-01",
+      "endDate": "2022-06-30",
+      "summary": "",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "The Ohio State University",
@@ -102,5 +121,5 @@
   "awards": [{
 
   }],
-  "languages": [{"Korean": "Native"}, {"English": "Fluent"}]
+  "languages": ["Korean", "English"]
 }
