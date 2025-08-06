@@ -5,6 +5,13 @@ permalink: /research/
 author_profile: true
 ---
 
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -12,29 +19,6 @@ author_profile: true
 {% include base_path %}
 
 <div class="research-page-layout">
-  <!-- Sidebar with Categories -->
-  <div class="research-sidebar">
-    <h3>Categories</h3>
-    <ul class="research-category-list">
-      {% assign total_count = 0 %}
-      {% for post in site.research %}{% assign total_count = total_count | plus: 1 %}{% endfor %}
-      <li><a href="#all" class="category-link active" data-category="all">All ({{ total_count }})</a></li>
-      {% if site.research_category %}
-        {% for category in site.research_category %}
-          {% assign category_count = 0 %}
-          {% for post in site.research %}
-            {% if post.category == category[0] %}
-              {% assign category_count = category_count | plus: 1 %}
-            {% endif %}
-          {% endfor %}
-          {% if category_count > 0 %}
-            <li><a href="#{{ category[0] }}" class="category-link" data-category="{{ category[0] }}">{{ category[1].title }} ({{ category_count }})</a></li>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </ul>
-  </div>
-
   <!-- Main Content Area -->
   <div class="research-content">
     {% if site.research_category %}
@@ -58,6 +42,28 @@ author_profile: true
         {% include archive-single-research.html %}
       {% endfor %}
     {% endif %}
+  </div>
+
+  <!-- Right Sidebar with Tags -->
+  <div class="research-sidebar">
+    <h3>Research Tags</h3>
+    <ul class="research-category-list">
+      {% assign all_tags = "" | split: "," %}
+      {% for post in site.research %}
+        {% if post.tags %}
+          {% for tag in post.tags %}
+            {% assign all_tags = all_tags | push: tag %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      {% assign unique_tags = all_tags | uniq | sort %}{% for tag in unique_tags %}
+        {% assign tag_count = 0 %}
+        {% for post in site.research %}
+          {% if post.tags contains tag %}
+            {% assign tag_count = tag_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}<li><a href="#{{ tag | slugify }}" class="tag-link">{{ tag }} ({{ tag_count }})</a></li>{% endfor %}
+    </ul>
   </div>
 </div>
 
