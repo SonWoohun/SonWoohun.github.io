@@ -1,7 +1,8 @@
 ---
 title: "Identification of Preferences with Unobserved Budget Using Vertical Differentiation within Brands"
-collection: working_paper
-permalink: /research/working_paper/2025-08-05-unobs-budget
+collection: research
+category: working_paper
+permalink: /research/2025-08-05-unobs-budget
 excerpt: 'This paper is about dealing with unobserved budget in discrete choice'
 date: 2025-08-05
 ---
