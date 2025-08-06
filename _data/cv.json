@@ -121,5 +121,5 @@
   "awards": [{
 
   }],
-  "languages": [{"name": "Korean", "fluency": "Native"}, {"name": "English", "fluency": "Fluent"}]
+  "language": [{"name": "Korean", "fluency": "Native"}, {"name": "English", "fluency": "Fluent"}]
 }
