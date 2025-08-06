@@ -16,6 +16,7 @@ tags:
   - nested logit
   - industrial organization
   - spill-over effects
+  - identification
 ---
 
 This paper develops a practical structural demand model—the Nested Consideration Logit (NCL) model—that disentangles two key effects of advertising: the *attention effect*, which increases the likelihood of consumer consideration, and the *blur effect*, which reduces perceived differences in product quality due to industry-wide advertising. The NCL allows for both product- and nest-level consideration probabilities to adjust desirability of product and nest. Blur is a function of the salience and volume of advertising in the model. The model incorporates *spill-over* effects of advertising within industries and frames ad competition as a public goods or public bads game, depending on market conditions. Comparative statics highlight how blur benefits lower-quality firms and reshapes price elasticities by weakening competitive pressure. The paper also establishes identification strategies for the model's parameters, especially when panel data exhibit blur effects invariance for some time periods. The model provides a practical tool for analyzing advertising effects in the presence of limited attention and information congestion given market level data and offers insights into how market dominance and advertising jointly shape consumer choice.

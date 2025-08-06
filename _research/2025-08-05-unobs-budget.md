@@ -5,7 +5,7 @@ category: working_paper
 permalink: /research/2025-08-05-unobs-budget
 excerpt: 'This paper develops a framework for identifying consumer preferences and budget distribution in discrete choice models where unobserved budget constraints determine consideration sets.'
 date: 2025-08-05
-slidesurl:  
+slidesurl: 'http://SonWoohun.github.io/files/IdentUnobsBudg2025Jul14.pdf'
 paperurl: 'http://SonWoohun.github.io/files/UnobsBudget_draft2025Aug1.pdf'
 bibtexurl: 'http://SonWoohun.github.io/files/main.bib'
 citation: 'Son, Woohun. (2025). &quot;Identification of Preferences with Unobserved Budget Using Vertical Differentiation within Brands.&quot;<i>http://SonWoohun.github.io/research/2025-08-05-unobs-budget<i>'
