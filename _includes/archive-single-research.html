@@ -1,0 +1,76 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item research-item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    
+    <!-- Research Category Badge -->
+    {% if post.category == 'working_paper' %}
+      <span class="research-badge working-paper">Working Paper</span>
+    {% elsif post.category == 'work_in_progress' %}
+      <span class="research-badge work-in-progress">Work in Progress</span>
+    {% endif %}
+    
+    <!-- Date -->
+    {% if post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Date:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
+
+    <!-- Excerpt -->
+    {% if post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+    {% endif %}
+    
+    <!-- Download Links Section -->
+    {% if post.paperurl or post.slidesurl or post.bibtexurl %}
+      <div class="archive__item-links">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" class="btn btn--primary btn--small" target="_blank">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper
+          </a>
+        {% endif %}
+        {% if post.slidesurl %}
+          <a href="{{ post.slidesurl }}" class="btn btn--info btn--small" target="_blank">
+            <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i> Download Slides
+          </a>
+        {% endif %}
+        {% if post.bibtexurl %}
+          <a href="{{ post.bibtexurl }}" class="btn btn--secondary btn--small" target="_blank">
+            <i class="fa fa-quote-left" aria-hidden="true"></i> BibTeX
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+    
+    <!-- Tags -->
+    {% if post.tags and post.tags.size > 0 %}
+      <div class="archive__item-tags">
+        {% for tag in post.tags %}
+          <span class="research-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </article>
+</div>

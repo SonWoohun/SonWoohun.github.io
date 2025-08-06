@@ -20,15 +20,17 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <div class="research-category">
+          <h2>{{ category[1].title }}</h2><hr />
+        </div>
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include archive-single-research.html %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.research reversed %}
-    {% include archive-single.html %}
+    {% include archive-single-research.html %}
   {% endfor %}
 {% endif %}
 
