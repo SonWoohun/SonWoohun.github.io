@@ -2,7 +2,7 @@
   "basics": {
     "name": "Woohun Son",
     "email": "son.268@osu.edu",
-    "phone": "",
+    "phone": null,
     "website": "https://SonWoohun.github.io",
     "summary": "Currently studying at the Ohio State University. Research interests include industrial organization, applied econometrics, and decision theory. Focusing on limited attention in advertising and budget constraint problem in discrete choice.",
     "location": {
