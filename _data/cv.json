@@ -30,13 +30,13 @@
       }
     ]
   },
-  "work": [
+  "work": [b
     {
       "company": "The Ohio State University",
       "position": "Graduate Research Assistant",
       "startDate": "2025-05-06",
       "endDate": "2025-08-15",
-      "summary": "Conducting research in rationalizability of stochastic choice data generated from different consideration sets with global preference function.",
+      "summary": "Decision Theory research assistant for Prof. John Rehbeck",
       "highlights": [
         "Trying to come up with preference function form that is robust to different consideration sets."
       ]
@@ -46,8 +46,8 @@
       "position": "Graduate Research Assistant",
       "startDate": "2021-10-01",
       "endDate": "2022-06-30",
-      "summary": "",
-      "highlights": []
+      "summary": "Economic history research assistant for Prof. Christopher Paik",
+      "highlights": ["Using Japanese Shinto Shrines in Korea during the Japanese colonial period as an Instrumental Variable."]
     }
   ],
   "education": [
@@ -121,5 +121,5 @@
   "awards": [{
 
   }],
-  "language": [{"name": "Korean", "fluency": "Native"}, {"name": "English", "fluency": "Fluent"}]
+  "languages": [{"name": "Korean", "fluency": "Native"}, {"name": "English", "fluency": "Fluent"}]
 }
