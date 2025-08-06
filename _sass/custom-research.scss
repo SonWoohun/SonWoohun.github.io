@@ -215,6 +215,29 @@
       font-size: 1.1rem !important;
     }
     
+    .archive__item-authors {
+      margin-bottom: 0.25rem !important;
+      font-size: 0.85rem !important;
+      font-style: italic !important;
+      color: var(--global-text-color-fade) !important;
+      
+      .author-link {
+        color: var(--global-link-color) !important;
+        text-decoration: none !important;
+        transition: color 0.2s ease !important;
+        
+        &:hover {
+          color: var(--global-link-hover-color) !important;
+          text-decoration: underline !important;
+        }
+      }
+      
+      .current-author {
+        font-weight: 500 !important;
+        color: var(--global-text-color) !important;
+      }
+    }
+    
     .page__date {
       margin-bottom: 0.25rem !important;
       font-size: 0.85rem !important;

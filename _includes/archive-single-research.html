@@ -23,6 +23,21 @@
       {% endif %}
     </h2>
     
+    <!-- Authors Section -->
+    {% if post.author_links and post.author_links.size > 0 %}
+      <p class="archive__item-authors">
+        {% for author in post.author_links %}
+          {% if author.url and author.url != "" %}
+            <a href="{{ author.url }}" target="_blank" class="author-link">{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            <span class="author-name current-author">{{ author.name }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </p>
+    {% elsif post.authors %}
+      <p class="archive__item-authors">{{ post.authors }}</p>
+    {% endif %}
+    
     <!-- Research Category Badge -->
     {% if post.category == 'working_paper' %}
       <span class="research-badge working-paper">Working Paper</span>
