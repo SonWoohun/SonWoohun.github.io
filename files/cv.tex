@@ -1,50 +1,126 @@
+% LaTeX Curriculum Vitae Template
+% Based on Jason Blevins' CV template
+% Adapted for automated generation from JSON data
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[letterpaper]{article}
 
-% ModernCV themes
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+\usepackage{hyperref}
+\usepackage{geometry}
 
-% Character encoding
-\usepackage[utf8]{inputenc}
+% Use Palatino font for a professional look
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
 
-% Adjust page margins
-\usepackage[scale=0.75]{geometry}
+% Set your name here
+\def\name{Woohun Son}
 
-% Personal data
-\name{Woohun Son}{}
-\title{Currently studying at the Ohio State University. Research interests include industrial organization, applied econometrics, and decision theory. Focusing on limited attention in advertising and budget constraint problem in discrete choice.}
-\address{Columbus}{Ohio}{US}
-\phone[mobile]{}
-\email{son.268@osu.edu}
-\homepage{https://SonWoohun.github.io}
-\social[github]{SonWoohun}
+% Set footer link
+\def\footerlink{https://SonWoohun.github.io}
+
+% PDF metadata
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, research, academic},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+% Page geometry
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
 
 \begin{document}
-\makecvtitle
+
+% Place name at left
+{\huge \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  The Ohio State University \\
+  Ph.D in Economics \\
+  Columbus, Ohio
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Email: & \href{mailto:son.268@osu.edu}{\tt son.268@osu.edu} \\
+    Homepage: & \href{https://SonWoohun.github.io}{\tt https://SonWoohun.github.io} \\
+    GitHub: & \href{https://github.com/SonWoohun}{\tt https://github.com/SonWoohun} \\
+  \end{tabular}
+\end{minipage}
 
 
-\section{Education}
-\cventry{Fall2022 -- 2028 (expected)}{Ph.D in Economics}{The Ohio State University}{}{}{}
-\cventry{2023}{M.A. in Economics}{The Ohio State University}{}{}{}
-\cventry{2022}{M.A. in Economics}{Korea University}{}{}{}
-\cventry{2019}{B.A. in Korean history and Economics (double major)}{Korea University}{}{}{}
+\section*{Education}
 
-\section{Experience}
-\cventry{2025-05-06 -- 2025-08-15}{Graduate Research Assistant}{The Ohio State University}{}{Decision Theory research assistant for Prof. John Rehbeck}{\begin{itemize}
-\item Trying to come up with preference function form that is robust to different consideration sets.
-\end{itemize}}
-\cventry{2021-10-01 -- 2022-06-30}{Graduate Research Assistant}{NYU Abu Dhabi}{}{Economic history research assistant for Prof. Christopher Paik}{\begin{itemize}
-\item Using Japanese Shinto Shrines in Korea during the Japanese colonial period as an Instrumental Variable.
-\end{itemize}}
+\begin{itemize}
+  \item Ph.D in Economics, The Ohio State University, 2028 (expected).
+  \item M.A. in Economics, The Ohio State University, 2023.
+  \item M.A. in Economics, Korea University, 2022.
+  \item B.A. in Korean history and Economics (double major), Korea University, 2019.
+\end{itemize}
 
-\section{Teaching Experience}
-\cventry{2021-Spring}{Teaching Assistant}{Undergraduate Theory of Taxation}{Korea University, Department of Economics}{}{Spring 2021}
-\cventry{2020-Spring}{Teaching Fellow}{Undergraduate Principles of Economics 1}{Korea University, Department of Economics}{}{Spring 2020, Spring 2021}
-\cventry{2019-Fall}{Teaching Assistant}{Undergraduate Econometrics 1}{Korea University, Department of Economics}{}{Fall 2019, Spring 2020, Fall 2020}
 
-\section{Languages}
-\cvitemwithcomment{Korean}{Korean (Native)}{}
-\cvitemwithcomment{English}{English (Fluent)}{}
+\section*{Employment}
+
+\begin{itemize}
+\item Graduate Research Assistant, The Ohio State University, 2025-05-06--2025-08-15.
+\item Graduate Research Assistant, NYU Abu Dhabi, 2021-10-01--2022-06-30.
+\end{itemize}
+
+
+\section*{Teaching}
+
+\begin{itemize}
+\item Teaching Assistant, Undergraduate Theory of Taxation, Spring 2021.
+\item Teaching Fellow, Undergraduate Principles of Economics 1, Spring 2020, Spring 2021.
+\item Teaching Assistant, Undergraduate Econometrics 1, Fall 2019, Spring 2020, Fall 2020.
+\end{itemize}
+
+
+\section*{Languages}
+
+\begin{itemize}
+\item Korean (Korean (Native)).
+\item English (English (Fluent)).
+\end{itemize}
+
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
 
 \end{document}
