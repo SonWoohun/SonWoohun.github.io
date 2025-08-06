@@ -18,13 +18,25 @@ author_profile: true
     <ul class="research-category-list">
       {% assign total_count = 0 %}
       {% for post in site.research %}{% assign total_count = total_count | plus: 1 %}{% endfor %}
-      <li><a href="#all" class="category-link active" data-category="all">All ({{ total_count }})</a></li>{% if site.research_category %}{% for category in site.research_category %}{% assign category_count = 0 %}{% for post in site.research %}{% if post.category == category[0] %}{% assign category_count = category_count | plus: 1 %}{% endif %}{% endfor %}{% if category_count > 0 %}<li><a href="#{{ category[0] }}" class="category-link" data-category="{{ category[0] }}">{{ category[1].title }} ({{ category_count }})</a></li>{% endif %}{% endfor %}{% endif %}
+      <li><a href="#all" class="category-link active" data-category="all">All ({{ total_count }})</a></li>
+      {% if site.research_category %}
+        {% for category in site.research_category %}
+          {% assign category_count = 0 %}
+          {% for post in site.research %}
+            {% if post.category == category[0] %}
+              {% assign category_count = category_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if category_count > 0 %}
+            <li><a href="#{{ category[0] }}" class="category-link" data-category="{{ category[0] }}">{{ category[1].title }} ({{ category_count }})</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </ul>
   </div>
 
   <!-- Main Content Area -->
   <div class="research-content">
-    <!-- New style rendering if research categories are defined -->
     {% if site.research_category %}
       {% for category in site.research_category  %}
         {% assign title_shown = false %}
