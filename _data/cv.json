@@ -82,23 +82,22 @@
       "institution": "Korea University, Department of Economics",
       "date": "2021-Spring",
       "role": "Teaching Assistant",
-      "description": ""
+      "description": "Spring 2021"
     },
     {
       "course": "Undergraduate Principles of Economics 1",
       "institution": "Korea University, Department of Economics",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "date": "2020-Spring",
+      "role": "Teaching Fellow",
+      "description": "Spring 2020, Spring 2021"
+    },
+    {
+      "course": "Undergraduate Econometrics 1",
+      "institution": "Korea University, Department of Economics",
+      "date": "2019-Fall",
+      "role": "Teaching Assistant",
+      "description": "Fall 2019, Spring 2020, Fall 2020"
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": null
 }
