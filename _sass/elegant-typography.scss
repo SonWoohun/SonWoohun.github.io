@@ -1,0 +1,282 @@
+/* ==========================================================================
+   ELEGANT TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+/* Google Fonts Integration */
+$elegant-serif: 'Crimson Text', 'Source Serif Pro', Georgia, serif;
+$elegant-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+$body-serif: 'Source Serif Pro', Georgia, serif;
+
+/* Enhanced Typography Variables */
+$global-font-family: $elegant-sans-serif;
+$header-font-family: $elegant-serif;
+$caption-font-family: $elegant-sans-serif;
+
+/* Refined Type Scale */
+$type-size-1: 2.5rem;    // Large headings
+$type-size-2: 2.125rem;  // H1
+$type-size-3: 1.75rem;   // H2
+$type-size-4: 1.375rem;  // H3
+$type-size-5: 1.125rem;  // H4, body large
+$type-size-6: 1rem;      // Base size
+$type-size-7: 0.875rem;  // Small text
+$type-size-8: 0.75rem;   // Caption text
+
+/* Enhanced Body Typography */
+body {
+  font-family: $global-font-family;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elegant Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin: 2.5rem 0 1rem;
+  color: var(--global-text-color);
+}
+
+h1 {
+  font-size: $type-size-2;
+  font-weight: 600;
+  margin-top: 0;
+  
+  &.page__title {
+    font-size: $type-size-1;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: $type-size-3;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: $type-size-4;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: $type-size-5;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h5, h6 {
+  font-size: $type-size-6;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced Paragraph Typography */
+p {
+  font-size: $type-size-6;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--global-text-color);
+  
+  &.lead {
+    font-size: $type-size-5;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Author Bio Typography */
+.author__bio {
+  font-size: $type-size-6;
+  line-height: 1.6;
+  
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Navigation Typography */
+.greedy-nav {
+  a {
+    font-family: $elegant-sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Archive Item Typography */
+.archive__item {
+  .archive__item-title {
+    font-family: $header-font-family;
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .archive__item-excerpt {
+    font-size: $type-size-7;
+    line-height: 1.6;
+    color: var(--global-text-color-fade);
+  }
+}
+
+/* Research/Publication Typography */
+.research-item, .publication-item {
+  h3 {
+    font-family: $header-font-family;
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .authors {
+    font-size: $type-size-7;
+    font-style: italic;
+    color: var(--global-text-color-fade);
+    margin-bottom: 0.5rem;
+  }
+  
+  .abstract {
+    font-size: $type-size-7;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+  }
+}
+
+/* Button Typography */
+.btn {
+  font-family: $elegant-sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* Link Styling */
+a {
+  color: var(--global-link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--global-link-hover-color);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--global-link-color);
+    outline-offset: 2px;
+  }
+}
+
+/* Enhanced List Typography */
+ul, ol {
+  font-size: $type-size-6;
+  line-height: 1.6;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Quote Typography */
+blockquote {
+  font-family: $body-serif;
+  font-size: $type-size-5;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid var(--global-border-color);
+  background: var(--global-bg-light);
+  
+  p {
+    font-size: inherit;
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  cite {
+    font-size: $type-size-7;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--global-text-color-fade);
+  }
+}
+
+/* Code Typography */
+code {
+  font-family: 'SFMono-Regular', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 0.9em;
+  font-feature-settings: "liga" 0;
+}
+
+/* Footer Typography */
+.page__footer {
+  font-size: $type-size-8;
+  
+  p {
+    font-size: inherit;
+    line-height: 1.5;
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: $type-size-3;
+    
+    &.page__title {
+      font-size: $type-size-2;
+    }
+  }
+  
+  h2 {
+    font-size: $type-size-4;
+  }
+  
+  h3 {
+    font-size: $type-size-5;
+  }
+  
+  body {
+    font-size: $type-size-7;
+  }
+  
+  p {
+    font-size: $type-size-7;
+  }
+}
+
+/* Print Typography */
+@media print {
+  body {
+    font-family: $body-serif;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $body-serif;
+    page-break-after: avoid;
+  }
+  
+  p, blockquote, ul, ol {
+    orphans: 3;
+    widows: 3;
+  }
+}
