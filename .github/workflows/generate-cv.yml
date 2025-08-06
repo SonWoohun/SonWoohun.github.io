@@ -1,0 +1,64 @@
+name: Generate CV PDF
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - '_data/cv.json'
+      - 'scripts/generate_cv_tex.py'
+      - '.github/workflows/generate-cv.yml'
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - '_data/cv.json'
+      - 'scripts/generate_cv_tex.py'
+  workflow_dispatch:
+
+jobs:
+  generate-cv:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Generate LaTeX from JSON
+      run: |
+        cd scripts
+        python generate_cv_tex.py
+    
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended
+    
+    - name: Compile LaTeX to PDF
+      run: |
+        cd files
+        pdflatex cv.tex
+        # Run twice to ensure proper formatting
+        pdflatex cv.tex
+    
+    - name: Check if PDF was generated
+      run: |
+        if [ -f files/cv.pdf ]; then
+          echo "PDF successfully generated"
+          ls -la files/cv.pdf
+        else
+          echo "PDF generation failed"
+          exit 1
+        fi
+    
+    - name: Commit and push PDF if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add files/cv.pdf files/cv.tex
+        git diff --staged --quiet || git commit -m "Auto-update CV PDF from JSON data"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
