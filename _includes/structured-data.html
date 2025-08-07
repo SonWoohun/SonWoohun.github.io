@@ -52,6 +52,7 @@ This helps Google understand your academic credentials and research
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{ site.title }}",
+  "alternateName": "Woohun Son Economics",
   "description": "{{ site.description }}",
   "url": "{{ site.url }}",
   "author": {
@@ -61,6 +62,11 @@ This helps Google understand your academic credentials and research
   "publisher": {
     "@type": "Person",
     "name": "{{ site.author.name }}"
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "Ph.D. Candidate in Economics"
   }
 }
 </script>
