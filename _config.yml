@@ -130,6 +130,15 @@ atom_feed:
   hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
+# Sitemap Settings
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  exclude:
+    - "/vendor/"
+    - "/assets/js/"
+    - "/assets/css/"
+    - "/_old_posts/"
 
 # SEO Related
 google_site_verification : "google44253d0480691e22" # Add your Google Search Console verification code here
