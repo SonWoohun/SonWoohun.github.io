@@ -14,6 +14,10 @@ on:
       - 'scripts/generate_cv_tex.py'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   generate-cv:
     runs-on: ubuntu-latest
@@ -56,12 +60,23 @@ jobs:
           exit 1
         fi
     
+    - name: Upload CV PDF as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: cv-pdf
+        path: files/cv.pdf
+        
     - name: Commit and push PDF if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add files/cv.pdf files/cv.tex
-        git diff --staged --quiet || git commit -m "Auto-update CV PDF from JSON data"
-        git push
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          echo "Changes detected, but skipping commit due to permissions"
+          echo "Please manually download and commit the generated PDF"
+          git status
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
