@@ -56,11 +56,13 @@ jobs:
           exit 1
         fi
     
-    - name: Upload CV PDF as artifact
+    - name: Upload CV files as artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: cv-pdf
-        path: files/cv.pdf
+        name: cv-files
+        path: |
+          files/cv.pdf
+          files/cv.tex
         
     - name: Configure Git
       run: |
