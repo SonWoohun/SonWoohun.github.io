@@ -15,11 +15,9 @@ Welcome to my academic website. I am a Ph.D. candidate in Economics at [The Ohio
 
 My research examines how **limited opportunity** such as *attention* or *budget constraints* affects consumer behavior and market outcomes, with particular emphasis on:
 
-- **Industrial Organization**: How firms compete when consumers have limited attention
-- **Applied Econometrics**: Developing methods to identify preferences with unobserved constraints that hinders consumer opportunity which likely induce nonlinearity in preference functions
-- **Decision Theory**: Understanding choice behavior under attention and budget limitations
-- **Advertising Economics**: The role of attention captured in advertising effectiveness
-- **Discrete Choice Models**: Incorporating realistic constraints into consumer choice modeling
+- **Industrial Organization**: How firms compete in advertisement when consumers have limited attention
+- **Applied Econometrics**: Developing methods to identify parameters of interest when structural models were brought into applied works
+- **Decision Theory**: Developing methods to test Random Utility Model (RUM), and characterizing stochastic transitivity
 
 ## Current Research
 
