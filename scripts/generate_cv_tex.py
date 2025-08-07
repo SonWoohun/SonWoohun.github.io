@@ -330,7 +330,7 @@ def generate_latex_cv(cv_data):
 \begin{itemize}
 """
         for lang in languages:
-            name = escape_latex(lang.get('name', ''))
+            name = escape_latex(lang.get('language', ''))
             fluency = escape_latex(lang.get('fluency', ''))
             
             if name and fluency:
