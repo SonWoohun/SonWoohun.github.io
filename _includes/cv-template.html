@@ -242,16 +242,18 @@
   <!-- Languages -->
   <div class="cv-section">
     <h2>Languages</h2>
-    <ul class="cv-list">
+    <div class="cv-languages">
+      {% assign language_list = '' %}
       {% for language in cv.languages %}
-      <li class="cv-item">
-        <div class="cv-item-content">
-          <div class="cv-item-title">{{ language.language }}</div>
-          <div class="cv-item-detail">{{ language.fluency }}</div>
-        </div>
-      </li>
+        {% assign lang_entry = language.language | append: ' (' | append: language.fluency | append: ')' %}
+        {% if forloop.first %}
+          {% assign language_list = lang_entry %}
+        {% else %}
+          {% assign language_list = language_list | append: ', ' | append: lang_entry %}
+        {% endif %}
       {% endfor %}
-    </ul>
+      <p>{{ language_list }}</p>
+    </div>
   </div>
   {% endif %}
   
