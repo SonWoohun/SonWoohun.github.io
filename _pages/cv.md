@@ -57,5 +57,5 @@ Teaching
 
 Languages
 ======
-* Korean (mother tongue), English
+Korean (Native), English (Fluent)
   

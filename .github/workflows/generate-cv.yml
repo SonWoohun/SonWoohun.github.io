@@ -1,18 +1,22 @@
 name: Generate CV PDF
 
+# Temporarily disabled due to permissions issues
+# on:
+#   push:
+#     branches: [ master, main ]
+#     paths:
+#       - '_data/cv.json'
+#       - 'scripts/generate_cv_tex.py'
+#       - '.github/workflows/generate-cv.yml'
+#   pull_request:
+#     branches: [ master, main ]
+#     paths:
+#       - '_data/cv.json'
+#       - 'scripts/generate_cv_tex.py'
+#   workflow_dispatch:
+
 on:
-  push:
-    branches: [ master, main ]
-    paths:
-      - '_data/cv.json'
-      - 'scripts/generate_cv_tex.py'
-      - '.github/workflows/generate-cv.yml'
-  pull_request:
-    branches: [ master, main ]
-    paths:
-      - '_data/cv.json'
-      - 'scripts/generate_cv_tex.py'
-  workflow_dispatch:
+  workflow_dispatch: # Only run manually
 
 permissions:
   contents: write
@@ -61,7 +65,7 @@ jobs:
         fi
     
     - name: Upload CV PDF as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: cv-pdf
         path: files/cv.pdf
