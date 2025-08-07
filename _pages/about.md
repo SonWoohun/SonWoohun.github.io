@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Woohun Son - Ph.D. Candidate in Economics"
+title: "Woohun Son / Economics"
 description: "Ph.D. candidate in Economics at The Ohio State University. Research interests include industrial organization, applied econometrics, and decision theory."
 author_profile: true
 redirect_from: 

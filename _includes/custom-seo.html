@@ -1,4 +1,11 @@
 <!-- Custom meta title for academic website -->
+<!-- Force override any cached titles -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.title = "{{ site.title }}";
+  });
+</script>
+
 {% if page.url == "/" %}
   <!-- Homepage gets the full site title -->
   <title>{{ site.title }}</title>
@@ -15,6 +22,11 @@
   <meta property="og:title" content="{{ site.title }}">
   <meta name="twitter:title" content="{{ site.title }}">
 {% endif %}
+
+<!-- Cache busting for title changes -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 
 <!-- Ensure description is set for homepage -->
 {% if page.url == "/" %}
