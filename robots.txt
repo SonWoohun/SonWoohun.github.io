@@ -6,19 +6,25 @@ Sitemap: https://SonWoohun.github.io/sitemap.xml
 
 # Allow access to all important pages
 Allow: /research/
-Allow: /publications/
 Allow: /cv/
 Allow: /cv-json/
 Allow: /teaching/
 Allow: /talks/
-Allow: /portfolio/
 
-# Disallow admin, development files, and old blog posts
+# Disallow admin, development files, and unnecessary folders
 Disallow: /_*
 Disallow: /assets/js/
 Disallow: /assets/css/
 Disallow: /.git/
 Disallow: /node_modules/
 Disallow: /vendor/
-Disallow: /_old_posts/
 Disallow: /posts/
+Disallow: /scripts/
+Disallow: /talkmap/
+Disallow: /files/
+Disallow: /*.ipynb$
+Disallow: /*.py$
+Disallow: /*.md$
+Disallow: /CONTRIBUTING*
+Disallow: /LICENSE*
+Disallow: /README*
