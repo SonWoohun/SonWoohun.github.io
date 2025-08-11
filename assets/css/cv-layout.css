@@ -27,6 +27,13 @@
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 2rem; /* Add padding to prevent clash */
+  min-height: 100vh; /* Set minimum height to ensure full viewport coverage */
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-footer {
+  margin-top: auto; /* Push footer to the bottom */
 }
 
 /* Download links styling */
