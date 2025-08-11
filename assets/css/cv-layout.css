@@ -26,6 +26,7 @@
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 2rem; /* Add padding to prevent clash */
 }
 
 /* Download links styling */
@@ -38,4 +39,9 @@
 
 .cv-download-links a {
   margin: 0 0.5rem;
+}
+
+/* Fix clash between profile area and bottom line */
+.cv-header {
+  margin-bottom: 3rem; /* Increase margin for better spacing */
 }
