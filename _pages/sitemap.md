@@ -25,5 +25,5 @@ A list of all the main pages on this website. For you robots out there, there is
 ## Research Papers
 
 {% for post in site.research %}
-  {% include archive-single.html %}
+  {% include archive-single-sitemap.html %}
 {% endfor %}

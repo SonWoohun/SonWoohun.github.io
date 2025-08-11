@@ -1,0 +1,38 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="sitemap-item">
+  <article class="research-item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h3 class="research-item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h3>
+    
+    <p class="research-item-date">
+      <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> 
+      <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
+        {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}
+      </time>
+    </p>
+
+    {% if post.excerpt %}
+    <p class="research-item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% endif %}
+    
+    <div class="research-item-buttons">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="btn">Download Paper</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" class="btn">Download Slides</a>
+      {% endif %}
+      {% if post.bibtexurl %}
+        <a href="{{ post.bibtexurl }}" class="btn">BibTeX</a>
+      {% endif %}
+    </div>
+  </article>
+</div>
