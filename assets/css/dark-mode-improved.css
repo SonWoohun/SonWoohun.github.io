@@ -1,0 +1,253 @@
+/* ==========================================================================
+   DARK MODE IMPROVED VISIBILITY STYLES
+   ========================================================================== */
+
+/* Dark mode improved color scheme */
+html[data-theme="dark"] {
+  /* High contrast but pleasant colors */
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --accent-blue: #4da6ff;
+  --accent-light-blue: #66b3ff;
+  --accent-cyan: #4dd0e1;
+  --accent-green: #66bb6a;
+  --accent-orange: #ffb74d;
+  --accent-purple: #ba68c8;
+  --accent-yellow: #fff176;
+  
+  /* Main text elements - ensure all text is white */
+  color: var(--text-primary) !important;
+  
+  /* Fix grey text issues */
+  .archive__item-excerpt,
+  .page__meta,
+  .page__date,
+  .author__bio,
+  .author__location,
+  .author__urls-wrapper,
+  .sidebar p,
+  .sidebar .author__bio,
+  p, 
+  span,
+  div {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Headers */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-cyan) !important;
+  }
+  
+  /* Main title */
+  .page__title,
+  .archive__item-title {
+    color: var(--accent-cyan) !important;
+  }
+  
+  /* Links */
+  a {
+    color: var(--accent-blue) !important;
+  }
+  
+  a:hover {
+    color: var(--accent-light-blue) !important;
+  }
+  
+  /* Navigation */
+  .masthead__inner-wrap .masthead__menu-item a {
+    color: var(--accent-green) !important;
+  }
+  
+  .masthead__inner-wrap .masthead__menu-item a:hover {
+    color: var(--accent-orange) !important;
+  }
+  
+  /* Author profile */
+  .author__name {
+    color: var(--accent-cyan) !important;
+  }
+  
+  .author__bio {
+    color: var(--text-primary) !important;
+  }
+  
+  .author__location {
+    color: var(--text-secondary) !important;
+  }
+  
+  .author__urls a {
+    color: var(--accent-blue) !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--accent-light-blue) !important;
+  }
+  
+  /* Research papers and content */
+  .archive__item-title a {
+    color: var(--accent-cyan) !important;
+  }
+  
+  .archive__item-excerpt {
+    color: var(--text-primary) !important;
+  }
+  
+  .page__date {
+    color: var(--accent-green) !important;
+  }
+  
+  /* CV specific elements */
+  .cv-section h3 {
+    color: var(--accent-purple) !important;
+  }
+  
+  /* Education and experience items */
+  .education-item,
+  .experience-item {
+    color: var(--text-primary) !important;
+  }
+  
+  .education-item h4,
+  .experience-item h4 {
+    color: var(--accent-cyan) !important;
+  }
+  
+  .education-item .institution,
+  .experience-item .company {
+    color: var(--accent-green) !important;
+  }
+  
+  .education-item .date,
+  .experience-item .date {
+    color: var(--text-muted) !important;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: var(--accent-blue) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--accent-blue) !important;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-light-blue) !important;
+    color: var(--text-primary) !important;
+    border: 2px solid var(--accent-light-blue) !important;
+  }
+  
+  /* Research specific elements */
+  .research-item-title {
+    color: var(--accent-cyan) !important;
+  }
+  
+  .research-item-date {
+    color: var(--accent-green) !important;
+  }
+  
+  .research-item-excerpt {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Footer */
+  .page__footer {
+    color: var(--text-primary) !important;
+  }
+  
+  .page__footer a {
+    color: var(--accent-blue) !important;
+  }
+  
+  .page__footer a:hover {
+    color: var(--accent-light-blue) !important;
+  }
+  
+  /* Sidebar elements */
+  .sidebar {
+    color: var(--text-primary) !important;
+  }
+  
+  .sidebar h2, .sidebar h3 {
+    color: var(--accent-cyan) !important;
+  }
+  
+  .sidebar p {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Tables */
+  th {
+    color: var(--accent-cyan) !important;
+  }
+  
+  td {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Code blocks */
+  code {
+    color: var(--accent-yellow) !important;
+    background-color: #2d2d2d !important;
+  }
+  
+  pre {
+    color: var(--text-primary) !important;
+    background-color: #2d2d2d !important;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    color: var(--text-primary) !important;
+    border-left: 4px solid var(--accent-cyan) !important;
+  }
+  
+  /* Lists */
+  ul, ol {
+    color: var(--text-primary) !important;
+  }
+  
+  li {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Forms */
+  input, textarea, select {
+    color: var(--text-primary) !important;
+    background-color: #3d3d3d !important;
+    border: 2px solid var(--accent-blue) !important;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--accent-light-blue) !important;
+  }
+  
+  /* Specific fixes for grey text */
+  .page__meta,
+  .page__date,
+  .archive__item-teaser,
+  .archive__item-excerpt,
+  .author__urls-wrapper,
+  .author__location,
+  .author__email {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Contact information */
+  .author__urls .fa {
+    color: var(--accent-blue) !important;
+  }
+  
+  /* Make sure all paragraph text is visible */
+  p {
+    color: var(--text-primary) !important;
+  }
+  
+  /* Breadcrumbs */
+  .breadcrumbs {
+    color: var(--text-secondary) !important;
+  }
+  
+  .breadcrumbs a {
+    color: var(--accent-blue) !important;
+  }
+}
