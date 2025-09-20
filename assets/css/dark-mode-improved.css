@@ -2,21 +2,48 @@
    DARK MODE IMPROVED VISIBILITY STYLES
    ========================================================================== */
 
-/* Dark mode improved color scheme */
+/* Dark mode improved color scheme (Moonlight) */
 html[data-theme="dark"] {
-  /* High contrast but pleasant colors */
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --text-muted: #b0b0b0;
-  --accent-blue: #4da6ff;
-  --accent-light-blue: #66b3ff;
-  --accent-cyan: #4dd0e1;
-  --accent-green: #66bb6a;
-  --accent-orange: #ffb74d;
-  --accent-purple: #ba68c8;
-  --accent-yellow: #fff176;
+  /* Moonlight palette */
+  --moon-bg: #0d1b2a;             /* deep navy */
+  --moon-surface: #13233a;        /* surface navy */
+  --moon-border: #1b2e46;         /* subtle border */
+  --moon-text: #e6eef8;           /* soft white-blue */
+  --moon-text-secondary: #c9d7e6; /* secondary text */
+  --moon-text-muted: #9fb2c7;     /* muted text */
+  --moon-accent: #8ecaff;         /* moonlight blue */
+  --moon-accent-hover: #b3ddff;   /* lighter hover */
+  --moon-accent-visited: #7db6e6; /* visited */
+
+  /* Back-compat variables used by the theme */
+  --global-base-color: var(--moon-bg);
+  --global-bg-color: var(--moon-bg);
+  --global-footer-bg-color: #0b1729;
+  --global-border-color: var(--moon-border);
+  --global-dark-border-color: var(--moon-surface);
+  --global-link-color: var(--moon-accent);
+  --global-link-color-hover: var(--moon-accent-hover);
+  --global-link-color-visited: var(--moon-accent-visited);
+  --global-masthead-link-color: var(--moon-accent);
+  --global-masthead-link-color-hover: var(--moon-accent-hover);
+  --global-text-color: var(--moon-text);
+  --global-text-color-light: var(--moon-text-secondary);
+  --global-thead-color: var(--moon-surface);
+
+  /* High contrast but calm colors for content */
+  --text-primary: var(--moon-text);
+  --text-secondary: var(--moon-text-secondary);
+  --text-muted: var(--moon-text-muted);
+  --accent-blue: var(--moon-accent);
+  --accent-light-blue: var(--moon-accent-hover);
+  --accent-cyan: #9ed0ff; /* headings tint */
+  --accent-green: #7cc4a6; /* occasional highlights */
+  --accent-orange: #ffc27a;
+  --accent-purple: #bda7e3;
+  --accent-yellow: #ffe58a;
   
-  /* Main text elements - ensure all text is white */
+  /* Base background + text */
+  background-color: var(--moon-bg) !important;
   color: var(--text-primary) !important;
   
   /* Fix grey text issues */
@@ -34,6 +61,32 @@ html[data-theme="dark"] {
     color: var(--text-primary) !important;
   }
   
+  /* Backgrounds for major areas */
+  body,
+  .page,
+  .page__content,
+  .page__hero,
+  .archive,
+  .wrapper,
+  .initial-content {
+    background-color: var(--moon-bg) !important;
+  }
+
+  .sidebar,
+  .notice,
+  .panel {
+    background-color: var(--moon-surface) !important;
+  }
+
+  /* Dividers */
+  hr,
+  .archive__item,
+  .page__content hr,
+  .archive hr {
+    border-color: var(--moon-border) !important;
+    color: var(--moon-border) !important;
+  }
+
   /* Headers */
   h1, h2, h3, h4, h5, h6 {
     color: var(--accent-cyan) !important;
@@ -47,20 +100,32 @@ html[data-theme="dark"] {
   
   /* Links */
   a {
-    color: var(--accent-blue) !important;
+    color: var(--moon-accent) !important;
   }
   
   a:hover {
-    color: var(--accent-light-blue) !important;
+    color: var(--moon-accent-hover) !important;
+  }
+
+  a:visited {
+    color: var(--moon-accent-visited) !important;
   }
   
-  /* Navigation */
+  /* Masthead (top navigation) */
+  .masthead {
+    background-color: #0b1729 !important; /* darker navy bar */
+    border-bottom: 1px solid var(--moon-border) !important;
+  }
+
+  .masthead__inner-wrap .site-title a,
+  .masthead__inner-wrap .site-title,
   .masthead__inner-wrap .masthead__menu-item a {
-    color: var(--accent-green) !important;
+    color: var(--moon-accent) !important;  /* moonlight links */
   }
   
-  .masthead__inner-wrap .masthead__menu-item a:hover {
-    color: var(--accent-orange) !important;
+  .masthead__inner-wrap .masthead__menu-item a:hover,
+  .masthead__inner-wrap .site-title a:hover {
+    color: var(--moon-accent-hover) !important;
   }
   
   /* Author profile */
@@ -151,6 +216,8 @@ html[data-theme="dark"] {
   
   /* Footer */
   .page__footer {
+    background-color: #0b1729 !important;
+    border-top: 1px solid var(--moon-border) !important;
     color: var(--text-primary) !important;
   }
   
@@ -229,7 +296,7 @@ html[data-theme="dark"] {
   .author__urls-wrapper,
   .author__location,
   .author__email {
-    color: var(--text-primary) !important;
+    color: var(--text-secondary) !important;
   }
   
   /* Contact information */
@@ -244,10 +311,19 @@ html[data-theme="dark"] {
   
   /* Breadcrumbs */
   .breadcrumbs {
-    color: var(--text-secondary) !important;
+    color: var(--text-muted) !important;
   }
   
   .breadcrumbs a {
     color: var(--accent-blue) !important;
+  }
+
+  /* Table borders and blockquote to match moon palette */
+  table, th, td {
+    border-color: var(--moon-border) !important;
+  }
+
+  blockquote {
+    background-color: var(--moon-surface) !important;
   }
 }
