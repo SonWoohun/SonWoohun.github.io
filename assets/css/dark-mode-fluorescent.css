@@ -1,0 +1,161 @@
+/* ==========================================================================
+   DARK MODE FLUORESCENT STYLES
+   ========================================================================== */
+
+/* Dark mode fluorescent color scheme */
+html[data-theme="dark"] {
+  /* Fluorescent text colors */
+  --fluorescent-cyan: #00ffff;
+  --fluorescent-green: #00ff00;
+  --fluorescent-yellow: #ffff00;
+  --fluorescent-pink: #ff00ff;
+  --fluorescent-orange: #ff6600;
+  --fluorescent-blue: #0099ff;
+  --fluorescent-white: #ffffff;
+  
+  /* Main text elements */
+  color: var(--fluorescent-white) !important;
+  
+  /* Headers */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  /* Links */
+  a {
+    color: var(--fluorescent-blue) !important;
+  }
+  
+  a:hover {
+    color: var(--fluorescent-yellow) !important;
+  }
+  
+  /* Navigation */
+  .masthead__inner-wrap .masthead__menu-item a {
+    color: var(--fluorescent-green) !important;
+  }
+  
+  .masthead__inner-wrap .masthead__menu-item a:hover {
+    color: var(--fluorescent-yellow) !important;
+  }
+  
+  /* Author profile */
+  .author__name {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  .author__bio {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  .author__urls a {
+    color: var(--fluorescent-green) !important;
+  }
+  
+  .author__urls a:hover {
+    color: var(--fluorescent-yellow) !important;
+  }
+  
+  /* Research papers and content */
+  .archive__item-title a {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  .archive__item-excerpt {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  .page__date {
+    color: var(--fluorescent-green) !important;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: var(--fluorescent-blue) !important;
+    color: #000000 !important;
+    border: 2px solid var(--fluorescent-blue) !important;
+  }
+  
+  .btn:hover {
+    background-color: var(--fluorescent-yellow) !important;
+    color: #000000 !important;
+    border: 2px solid var(--fluorescent-yellow) !important;
+  }
+  
+  /* CV and research specific elements */
+  .cv-section h3 {
+    color: var(--fluorescent-pink) !important;
+  }
+  
+  .research-item-title {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  .research-item-date {
+    color: var(--fluorescent-green) !important;
+  }
+  
+  /* Footer */
+  .page__footer {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  .page__footer a {
+    color: var(--fluorescent-blue) !important;
+  }
+  
+  .page__footer a:hover {
+    color: var(--fluorescent-yellow) !important;
+  }
+  
+  /* Sidebar elements */
+  .sidebar {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  .sidebar h2, .sidebar h3 {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  /* Tables */
+  th {
+    color: var(--fluorescent-cyan) !important;
+  }
+  
+  td {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  /* Code blocks */
+  code {
+    color: var(--fluorescent-yellow) !important;
+    background-color: #1a1a1a !important;
+  }
+  
+  pre {
+    color: var(--fluorescent-white) !important;
+    background-color: #1a1a1a !important;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    color: var(--fluorescent-white) !important;
+    border-left: 4px solid var(--fluorescent-cyan) !important;
+  }
+  
+  /* Lists */
+  ul, ol {
+    color: var(--fluorescent-white) !important;
+  }
+  
+  /* Forms */
+  input, textarea, select {
+    color: var(--fluorescent-white) !important;
+    background-color: #333333 !important;
+    border: 2px solid var(--fluorescent-blue) !important;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--fluorescent-yellow) !important;
+  }
+}
