@@ -210,6 +210,23 @@ html[data-theme="dark"] {
     border-color: var(--moon-accent) !important;
   }
 
+  /* Ensure link buttons keep navy text in all states */
+  .archive__item-links a.btn,
+  .archive__item-links a.btn:link,
+  .archive__item-links a.btn:visited,
+  .archive__item-links a.btn:hover,
+  .archive__item-links a.btn:active,
+  .archive__item-links a.btn:focus {
+    color: var(--moon-ink) !important;
+  }
+
+  /* Nested icons/text inside buttons should inherit navy */
+  .archive__item-links a.btn *,
+  .archive__item-links .btn * {
+    color: inherit !important;
+    fill: currentColor !important;
+  }
+
   /* Disabled buttons (various patterns) */
   .btn[disabled],
   .btn:disabled,
@@ -256,6 +273,12 @@ html[data-theme="dark"] {
     border-radius: 999px !important;
     padding: 0.25rem 0.6rem !important;
     font-weight: 600 !important;
+  }
+
+  /* Extra specificity to defeat theme badge styles */
+  .archive__item .research-badge,
+  .archive__item .research-tag {
+    color: var(--moon-ink) !important;
   }
 
   .research-badge.working-paper,
