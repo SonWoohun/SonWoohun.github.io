@@ -11,7 +11,7 @@ A list of all the main pages on this website. For you robots out there, there is
 
 ## Main Navigation
 
-* [Researches]({{ base_path }}/research/)
+* [Research]({{ base_path }}/research/)
 * [Curriculum Vitae (CV)]({{ base_path }}/cv-json/)
 * [Talks]({{ base_path }}/talks/)
 * [Teaching]({{ base_path }}/teaching/)
