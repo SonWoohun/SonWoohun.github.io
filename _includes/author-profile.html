@@ -8,9 +8,14 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
+      <a href="{{ author.avatar }}" target="_blank" rel="noopener">
+        <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
+      </a>
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
+      {% assign avatar_path = author.avatar | prepend: "/images/" | prepend: base_path %}
+      <a href="{{ avatar_path }}" target="_blank" rel="noopener">
+        <img src="{{ avatar_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" />
+      </a>
     {% endif %}
   </div>
 

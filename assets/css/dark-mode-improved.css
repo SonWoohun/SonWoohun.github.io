@@ -14,6 +14,7 @@ html[data-theme="dark"] {
   --moon-accent: #8ecaff;         /* moonlight blue */
   --moon-accent-hover: #b3ddff;   /* lighter hover */
   --moon-accent-visited: #7db6e6; /* visited */
+  --moon-ink: #0b1729;            /* dark navy text on light chips/buttons */
 
   /* Back-compat variables used by the theme */
   --global-base-color: var(--moon-bg);
@@ -189,17 +190,48 @@ html[data-theme="dark"] {
   }
   
   /* Buttons */
-  .btn {
-    background-color: var(--accent-blue) !important;
-    color: var(--text-primary) !important;
-    border: 2px solid var(--accent-blue) !important;
+  .btn,
+  .btn--primary,
+  .btn--info,
+  .btn--secondary {
+    background-color: var(--moon-accent-hover) !important; /* soft moon blue */
+    color: var(--moon-ink) !important;                     /* navy text */
+    border: 1px solid var(--moon-accent-visited) !important;
+    box-shadow: none !important;
   }
   
-  .btn:hover {
-    background-color: var(--accent-light-blue) !important;
-    color: var(--text-primary) !important;
-    border: 2px solid var(--accent-light-blue) !important;
+  .btn:hover,
+  .btn--primary:hover,
+  .btn--info:hover,
+  .btn--secondary:hover,
+  .btn:focus {
+    background-color: var(--moon-accent) !important;
+    color: var(--moon-ink) !important;
+    border-color: var(--moon-accent) !important;
   }
+
+  /* Disabled buttons (various patterns) */
+  .btn[disabled],
+  .btn:disabled,
+  .btn.disabled,
+  .btn[aria-disabled="true"],
+  a.btn[href=""],
+  a.btn:not([href]) {
+    /* static light moon blue for broad browser support */
+    background-color: #d6ebff !important;
+    color: var(--moon-ink) !important;
+    border-color: #9cc9ff !important;
+    opacity: 1 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+  }
+
+  /* Ensure icons inside buttons inherit readable color */
+  .btn i { color: inherit !important; }
+
+  /* Make clickable avatar feel interactive in dark mode */
+  .author__avatar a img { cursor: zoom-in; }
+  .author__avatar a:hover img { box-shadow: 0 0 0 2px var(--moon-accent); border-radius: 50%; }
   
   /* Research specific elements */
   .research-item-title {
@@ -212,6 +244,24 @@ html[data-theme="dark"] {
   
   .research-item-excerpt {
     color: var(--text-primary) !important;
+  }
+
+  /* Research badges and tags (chips) */
+  .research-badge,
+  .research-tag {
+    display: inline-block;
+    background-color: var(--moon-accent-hover) !important;
+    color: var(--moon-ink) !important;
+    border: 1px solid var(--moon-accent-visited) !important;
+    border-radius: 999px !important;
+    padding: 0.25rem 0.6rem !important;
+    font-weight: 600 !important;
+  }
+
+  .research-badge.working-paper,
+  .research-badge.work-in-progress {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
   }
   
   /* Footer */
